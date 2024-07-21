@@ -1,0 +1,124 @@
+body {
+    font-family: 'Cairo', sans-serif;
+}
+*{
+    --wepkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+}
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    
+}
+hr {
+    margin-top: 5px;
+}
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-top: 10px;
+}
+/* small media */
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+/* medium media */
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+/* large media */
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+.container .client {
+    width: 100%;
+    margin: 10px  auto;
+    text-align: center;
+}
+.container .client span {
+    font-weight: bold;
+    margin-right: 25px;
+}
+.container .client input {
+    outline: none;
+    width: 25%;
+    padding: 5px;
+    border: .5px solid #eee;
+    border-radius: 6px;
+    margin-bottom: 5px;
+}
+.container .client input:focus {
+    box-shadow: 0px 0px 1px 1px rgb(35, 160, 244);
+}
+.container .client p {
+    color: #a2a0a0;
+    margin-bottom: 5px;
+    margin: auto;
+}
+.container .client .btn {
+    color: white;
+    background-color: rgb(50, 226, 50);
+    padding: 5px 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 6px;
+    margin-top: 10px;
+    cursor: pointer;
+    display: inline-block;
+}
+.container .list-client .spans {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+.container .list-client .spans span {
+    width: calc(100% / 3);
+    border: .5px solid #eee;
+    padding: 5px 10px;
+}
+.container .list-client .spans .span{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    }
+.container .list-client .spans .edit {
+color: white;
+    background-color: #337ab7;
+    border: none;
+    margin: 5px;
+    padding: 2px;
+    width: 45px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 6px;
+    font-size: 14px;
+    cursor: pointer;
+}
+.container .list-client .spans .delete {
+    color: white;
+    background-color: #d9534f;
+    border: none;
+    padding: 2px;
+    width: 45px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 6px;
+    font-size: 14px;
+    cursor: pointer;
+}
